@@ -95,5 +95,10 @@ namespace LinkedList
                 position += 1;
             }
         }
+        
+        public void Clear()
+        {
+            head = null;            
+        }
     }
 }

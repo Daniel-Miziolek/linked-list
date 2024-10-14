@@ -29,6 +29,15 @@ namespace LinkedList
             list3.Display();
 
             list2.Remove(0);
+
+            LinkedList list4 = new LinkedList();
+            list4.Append(1);
+            list4.Append(2);
+            list4.Append(3);
+
+            list4.Clear();
+
+            Console.WriteLine(list4.Length());
         }
     }    
 }

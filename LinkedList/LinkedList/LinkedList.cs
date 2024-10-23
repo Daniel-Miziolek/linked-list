@@ -83,6 +83,7 @@ namespace LinkedList
             }
             Node temp = head;
             int position = 0;
+
             while (temp.Next != null)
             {
                 Node previous = temp;
@@ -95,10 +96,18 @@ namespace LinkedList
                 position += 1;
             }
         }
+
+        public void Prepend(int data)
+        {
+            Node newNode = new Node(data);
+            newNode.Next = head;
+            head = newNode;
+        }
         
         public void Clear()
         {
             head = null;            
         }
+        
     }
 }

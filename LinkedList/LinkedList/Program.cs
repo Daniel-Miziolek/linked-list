@@ -34,6 +34,12 @@ namespace LinkedList
             list4.Append(1);
             list4.Append(2);
             list4.Append(3);
+            list4.Prepend(0);
+
+            for (int i = 0; i < list4.Length(); i++)
+            {
+                Console.WriteLine(i);
+            }
 
             list4.Clear();
 
